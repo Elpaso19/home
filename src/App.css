@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "karla",sans-serif;
+    margin: 0;
+}
+
+.header{
+    display:flex;
+    align-items: center;
+    height: 65px;
+    background: linear-gradient(90deg,#672280 1.18%,#A626d3 100%);
+    color: white;
+    padding: 20px;
+}
+img{
+    height: 100%;
+    margin-right: 6px;
+
+}
+.header-title{
+    font-family: 'Courier New', Courier, monospace;
+    font: size 20px;
+    margin-right: auto;
+}
+
+.head{
+    font-size: 12px;
+    font-weight: 500;
+    border-right: 100px;
+    
+}
+main{
+    padding:36px;
+}
+
+
+.form{
+    
+    display:grid;
+    
+    grid-template:40px 40px /1 fr 1fr;
+    gap:17px;
+}
+
+.form-button{
+    grid: column 1px / -1px;
+    font-family: "karla",sans-serif;
+    background: linear-gradient(90.41deg,#711F8D 1.14%,#A818DA 100%);
+    padding: 12px;
+    color:white;
+    border: none;
+    cursor:pointer;
+}
+.font-input{
+    font-family: "karla",sans-serif;
+    border-radius: 5px;
+    border:1px solid #D5D4D8;
+    text-indent: 10px;
+   
+}
