@@ -13,7 +13,7 @@ export default function Meme() {
 
 useEffect(()=>{
   fetch("https://api.imgflip.com/get_memes")
-  .then(res=>res.json())git
+  .then(res=>res.json())
   .then(data=>setAllmemesImages(data.data.memes))
 },[])
 
