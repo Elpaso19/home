@@ -61,3 +61,35 @@ main{
     text-indent: 10px;
    
 }
+
+
+.state{
+     background-color:rgb(145, 145, 171);
+     position: relative;
+     
+     height:450px;
+}
+.state-result{
+    
+    
+    padding: 36px;
+    height: 100px;
+    width: 100px;
+    border-radius:50%;
+    background: rgb(253, 253, 253);
+
+}
+.counter{
+    overflow-x: visible;
+}
+.memeImg{
+    max-width: 36%;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    display: inline-block;
+    margin-right: 4px;
+    border-radius: 5px;
+}
