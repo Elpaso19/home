@@ -1,25 +1,40 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import "./App.css";
-import Header from "./components/header";
-import Meme from "./components/meme";
-
-
-
-
+import Item from "./components/item"
+import box from "./components/box"
 
 
 export default function App() {
-  
-  
-return (
-     <div>
+
+     const [squares, setSquares] = useState(box);
 
 
-    
-    
-    <Header />
-    <Meme />
+     function toggle(id) {
 
-     </div>
 
-)}
+          setSquares(prevState => {
+               return prevState.map((square) => {
+                    return square.id === id ? { ...square, on: !square.on } : square
+               })
+          })
+     
+     }
+     
+     const squareElement = squares.map((item) => (
+          <Item key={item.id}
+               handleClick={() => toggle(item.id)}
+     
+               on={item.on}
+          />
+     ));
+     
+     return (
+          <div>
+
+
+               <h1>{squareElement}</h1>
+
+          </div>
+
+     )
+}
